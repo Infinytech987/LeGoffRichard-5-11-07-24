@@ -203,8 +203,7 @@ header {
   object-position: center;
 }
 /* Code CSS en prévision de l'ajout d'un carousel pour la bannière */
-/* Code CSS en prévision de l'ajout d'un carousel pour la bannière */
-/* Gestion du container principal du carrousel */
+/* Container principal du carrousel */
 #banner {
   display: flex;
   flex-direction: column;
@@ -214,7 +213,7 @@ header {
   min-height: 470px;
   position: relative;
 }
-/* Gestion des images du carrousel */
+/* Images du carrousel */
 .banner-img {
   position: absolute;
   width: 100%;
@@ -223,7 +222,7 @@ header {
   object-fit: cover;
   object-position: center;
 }
-/* Gestion des fleches pour les boutons du carrousel */
+/* Fleches pour les boutons du carrousel */
 #banner .arrow {
   position: absolute;
   border: none;
@@ -235,24 +234,6 @@ header {
 }
 #banner .arrow_right {
   right: 10px;
-}
-/* Gestion des points indicateurs du carrousel */
-.dots {
-  position: absolute;
-  bottom: 40px;
-  display: flex;
-}
-.dot {
-  margin-inline: 5px;
-  width: 13px;
-  height: 13px;
-  background-color: #ffffff00;
-  border: 3px solid #fff;
-  border-radius: 100%;
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-}
-.dot_selected {
-  background-color: #fff;
 }
 /* Fin du code CSS pour le carousel */
 #banner p {
