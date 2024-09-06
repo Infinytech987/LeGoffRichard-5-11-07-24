@@ -236,27 +236,38 @@ header {
   right: 10px;
 }
 /* Dots / Bullets points */
+/* Conteneur des dots placé en bas du slider */
 .dots {
+  position: absolute;
+  bottom: 45px; /* Les dots seront placés à 45px du bas du slider */
+  left: 50%;
+  transform: translateX(-50%);
   display: flex;
   justify-content: center;
-  margin-top: 10px;
+  z-index: 10; /* S'assurer que les dots soient visibles au-dessus de l'image du slider */
 }
 
+/* Style des dots : cercle vide avec bordure blanche plus épaisse */
 .dot {
-  height: 15px;
-  width: 15px;
-  margin: 0 5px;
-  background-color: #bbb;
+  height: 18px; /* Augmentation de la taille */
+  width: 18px; /* Augmentation de la taille */
+  margin: 0 6px; /* Légèrement plus d'espacement entre les dots */
+  background-color: transparent; /* Cercle vide */
+  border: 3.5px solid white; /* Bordure plus épaisse */
   border-radius: 50%;
   display: inline-block;
   cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
 }
 
+/* Dot actif : cercle plein blanc avec bordure plus épaisse */
 .dot.active {
-  background-color: #717171;
+  background-color: white; /* Dot rempli de blanc */
+  border-color: white; /* Bordure blanche */
 }
 
 /* Fin du code CSS pour le carousel */
+
 #banner p {
   font-family: "Roboto Slab", sans-serif;
   font-weight: 900;
