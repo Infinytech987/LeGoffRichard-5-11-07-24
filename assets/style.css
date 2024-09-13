@@ -228,6 +228,7 @@ header {
   border: none;
   background: none;
   outline: none;
+  cursor: pointer;
 }
 #banner .arrow_left {
   left: 10px;
